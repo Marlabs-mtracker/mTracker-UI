@@ -199,3 +199,11 @@ $(document).ready(function () {
         bAutoWidth: false
     });
 });
+
+
+// lick task update button
+$('.btn_update').on('click', function () {
+    var taskID = $(this).prop('id');
+    console.log(taskID);
+    window.location = './update-task.html';
+})

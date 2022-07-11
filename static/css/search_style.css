@@ -15,12 +15,13 @@ body{
     font-weight: 800;
     color: #504DFF;
 }
-#task-search-btn{
+#task-search-btn, .btn_update{
     background: #504DFF;
     border-radius: 10px;
 }
-
-
+.modal-trigger{
+  border-radius: 10px;
+}
 /* for results */
 div.material-table {
     padding: 0;
