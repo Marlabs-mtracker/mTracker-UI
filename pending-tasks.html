@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./static/css/nav-bar_style.css">
+    <link rel="stylesheet" href="./static/css/pending-tasks_style.css">
+    <title>pending-tasks</title>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="pending-tasks-container">
+        <center>
+            <div class="task-search row">
+                <input class="col l7" type="text" placeholder="Type here to search...">
+                <!-- send search request based on input -->
+                <button class="btn search-btn waves-effect waves-light" onclick="">Search</button>
+            </div>
+        </center>
+        <div class="row">
+            <center>
+                <h5 class="pending-tasks-title">Pending Tasks</h5>
+            </center>
+
+        </div>
+        <div>
+            <ul class="collapsible">
+                <li class="task-card">
+                    <div class="collapsible-header">
+                        <div class="employee-info">
+                            <div class="">Employee ID: <span>1282321</span></div>
+                            <div class="">Name: <span>Lorem Joey</span></div>
+                            <div class="">Email: <span>lorem.joyey@mail.com</span></div>
+                        </div>
+                        <div class="task-title">
+                            <div>Task/Query: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                                    labore, laborum eaque voluptatum modi delectus dicta soluta.</span></div>
+                        </div>
+                        <div class="task-info">
+                            <div class="">Created Date: <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Due Date: <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Status: <span>Pending</span></div>
+                        </div>
+                    </div>
+                    <div class="collapsible-body row">
+
+                        <div class="task-summary col l9 s12">
+                            <span class="row">Summary</span>
+                            <div class="">Getting further info <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Connecting with the employee <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Resolved <span>07/20/2022, 02:00:12 PM</span></div>
+                        </div>
+                        <div class="task-actions col l3 s12">
+                            <div class="">
+                                <div class="input-field">
+                                    <button type='submit' name='btn_update' id="task-update-btn"
+                                        class='btn btn-small teal waves-effect waves-light'>Update</button>
+                                </div>
+                                <div class="col s12"></div>
+                                <div class="input-field">
+                                    <button name='btn_ask_delete' id="task-delete-btn"
+                                        class=' btn btn-small red waves-effect waves-light'>Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="task-card">
+                    <div class="collapsible-header">
+                        <div class="employee-info">
+                            <div class="">Employee ID: <span>1282321</span></div>
+                            <div class="">Name: <span>Lorem Joey</span></div>
+                            <div class="">Email: <span>lorem.joyey@mail.com</span></div>
+                        </div>
+                        <div class="task-title">
+                            <div>Task/Query: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                                    labore, laborum eaque voluptatum modi delectus dicta soluta.</span></div>
+                        </div>
+                        <div class="task-info">
+                            <div class="">Created Date: <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Due Date: <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Status: <span>Pending</span></div>
+                        </div>
+                    </div>
+                    <div class="collapsible-body row">
+
+                        <div class="task-summary col l9 s12">
+                            <span class="row">Summary</span>
+                            <div class="">Getting further info <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Connecting with the employee <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Resolved <span>07/20/2022, 02:00:12 PM</span></div>
+                        </div>
+                        <div class="task-actions col l3 s12">
+                            <div class="">
+                                <div class="input-field">
+                                    <button type='submit' name='btn_update' id="task-update-btn"
+                                        class='btn btn-small teal waves-effect waves-light'>Update</button>
+                                </div>
+                                <div class="col s12"></div>
+                                <div class="input-field">
+                                    <button name='btn_ask_delete' id="task-delete-btn"
+                                        class=' btn btn-small red waves-effect waves-light'>Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="task-card">
+                    <div class="collapsible-header">
+                        <div class="employee-info">
+                            <div class="">Employee ID: <span>1282321</span></div>
+                            <div class="">Name: <span>Lorem Joey</span></div>
+                            <div class="">Email: <span>lorem.joyey@mail.com</span></div>
+                        </div>
+                        <div class="task-title">
+                            <div>Task/Query: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                                    labore, laborum eaque voluptatum modi delectus dicta soluta.</span></div>
+                        </div>
+                        <div class="task-info">
+                            <div class="">Created Date: <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Due Date: <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Status: <span>Pending</span></div>
+                        </div>
+                    </div>
+                    <div class="collapsible-body row">
+
+                        <div class="task-summary col l9 s12">
+                            <span class="row">Summary</span>
+                            <div class="">Getting further info <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Connecting with the employee <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Resolved <span>07/20/2022, 02:00:12 PM</span></div>
+                        </div>
+                        <div class="task-actions col l3 s12">
+                            <div class="">
+                                <div class="input-field">
+                                    <button type='submit' name='btn_update' id="task-update-btn"
+                                        class='btn btn-small teal waves-effect waves-light'>Update</button>
+                                </div>
+                                <div class="col s12"></div>
+                                <div class="input-field">
+                                    <button name='btn_ask_delete' id="task-delete-btn"
+                                        class=' btn btn-small red waves-effect waves-light'>Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="task-card">
+                    <div class="collapsible-header">
+                        <div class="employee-info">
+                            <div class="">Employee ID: <span>1282321</span></div>
+                            <div class="">Name: <span>Lorem Joey</span></div>
+                            <div class="">Email: <span>lorem.joyey@mail.com</span></div>
+                        </div>
+                        <div class="task-title">
+                            <div>Task/Query: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                                    labore, laborum eaque voluptatum modi delectus dicta soluta.</span></div>
+                        </div>
+                        <div class="task-info">
+                            <div class="">Created Date: <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Due Date: <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Status: <span>Pending</span></div>
+                        </div>
+                    </div>
+                    <div class="collapsible-body row">
+
+                        <div class="task-summary col l9 s12">
+                            <span class="row">Summary</span>
+                            <div class="">Getting further info <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Connecting with the employee <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Resolved <span>07/20/2022, 02:00:12 PM</span></div>
+                        </div>
+                        <div class="task-actions col l3 s12">
+                            <div class="">
+                                <div class="input-field">
+                                    <button type='submit' name='btn_update' id="task-update-btn"
+                                        class='btn btn-small teal waves-effect waves-light'>Update</button>
+                                </div>
+                                <div class="col s12"></div>
+                                <div class="input-field">
+                                    <button name='btn_ask_delete' id="task-delete-btn"
+                                        class=' btn btn-small red waves-effect waves-light'>Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="task-card">
+                    <div class="collapsible-header">
+                        <div class="employee-info">
+                            <div class="">Employee ID: <span>1282321</span></div>
+                            <div class="">Name: <span>Lorem Joey</span></div>
+                            <div class="">Email: <span>lorem.joyey@mail.com</span></div>
+                        </div>
+                        <div class="task-title">
+                            <div>Task/Query: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                                    labore, laborum eaque voluptatum modi delectus dicta soluta.</span></div>
+                        </div>
+                        <div class="task-info">
+                            <div class="">Created Date: <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Due Date: <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Status: <span>Pending</span></div>
+                        </div>
+                    </div>
+                    <div class="collapsible-body row">
+
+                        <div class="task-summary col l9 s12">
+                            <span class="row">Summary</span>
+                            <div class="">Getting further info <span>07/15/2022, 02:00:12 PM</span></div>
+                            <div class="">Connecting with the employee <span>07/20/2022, 02:00:12 PM</span></div>
+                            <div class="">Resolved <span>07/20/2022, 02:00:12 PM</span></div>
+                        </div>
+                        <div class="task-actions col l3 s12">
+                            <div class="">
+                                <div class="input-field">
+                                    <button type='submit' name='btn_update' id="task-update-btn"
+                                        class='btn btn-small teal waves-effect waves-light'>Update</button>
+                                </div>
+                                <div class="col s12"></div>
+                                <div class="input-field">
+                                    <button name='btn_ask_delete' id="task-delete-btn"
+                                        class=' btn btn-small red waves-effect waves-light'>Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <center>
+                    <button class="btn load-more-btn waves-effect waves-light" onclick="">Load More...</button>
+                </center>
+                <br>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/static/js/nav-bar.js"></script>
+    <script type="text/javascript" src="/static/js/pending-task.js"></script>
+    <script>
+        // mobile navbar
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+
+</html>

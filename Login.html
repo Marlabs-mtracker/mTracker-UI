@@ -20,9 +20,9 @@
 
             <div class="container">
                 <div id="login-card" class="z-depth-1 grey lighten-4 row"
-                    style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-                    <h5 class="login-title">Login</h5>
-                    <form class="col s12" method="#">
+                    style="display: inline-block; padding: 30px 40px 25px 40px; border: 1px solid #EEE;">
+                    <p class="login-title">Login</p>
+                    <form class="col s12" method="">
                         <div class='row'>
                             <div class='col s12'>
                             </div>
@@ -30,21 +30,24 @@
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='text' name='emp-id' id='emp-id' />
+                                <input class='' type='text' name='emp-id' id='emp-id' autocomplete="off"/>
                                 <label for='emp-id'>Enter your Employee ID</label>
                             </div>
+                            <span id="validate-eid" class="validate left"></span>
                         </div>
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='password' name='password' id='password' />
-                                <label for='password'>Enter your password</label>
+                                <input class='' type='password' name='emp-pass' id='emp-pass' />
+                                <label for='emp-pass'>Enter your password</label>
                             </div>
+                            <span id="validate-pass" class="validate left"></span>
+                        </div>
+                        <div class="row">
                             <label style='float: right;'>
                                 <a class='pink-text' href='send-reset-mail.html'><b>Reset Password?</b></a>
                             </label>
                         </div>
-
                         <br />
                         <center>
                             <div class='row'>
@@ -63,6 +66,7 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/static/js/login.js"></script>
 </body>
 
 </html>

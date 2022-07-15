@@ -26,26 +26,40 @@
         #reset-mail-card {
             border-radius: 20px;
             padding: 30px;
-            min-width: 414px;
+            width: 400px;
         }
 
         .reset-mail-title {
             font-weight: 800;
             color: #504DFF;
+            font-size: 1.5rem;
+            margin: 0;
         }
 
-        .input-field input[type=text]:focus+label {
-            color: #e91e63;
-        }
-
-        .input-field input[type=text]:focus {
-            border-bottom: 2px solid #e91e63;
-            box-shadow: none;
-        }
-
-        #send-btn {
+        #send-reset-mail-btn {
             background: #504DFF;
             border-radius: 10px;
+        }
+
+        .input-field {
+            margin-bottom: 0;
+        }
+
+        .validate {
+            padding: 2px 5px 2px 10px;
+            font-size: 13px;
+        }
+
+        .invalid {
+            color: red;
+        }
+
+        .valid {
+            color: green;
+        }
+
+        .row {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -59,8 +73,8 @@
 
             <div class="container">
                 <div id="reset-mail-card" class="z-depth-1 grey lighten-4 row"
-                    style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-                    <h5 class="reset-mail-title">Send Reset Mail</h5>
+                    style="display: inline-block; padding: 30px 40px 25px 40px; border: 1px solid #EEE;">
+                    <p class="reset-mail-title">Send Password Reset Mail</p>
                     <form class="col s12 l12" method="#">
                         <div class='row'>
                             <div class='col s12'>
@@ -69,9 +83,10 @@
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='text' name='emp-mail' id='emp-mail' />
-                                <label for='emp-mail'>Enter your Employee ID</label>
+                                <input class='validate' type='text' name='emp-id' id='emp-id' autocomplete="off" />
+                                <label for='emp-id'>Enter your Employee ID</label>
                             </div>
+                            <span id="validate-eid" class="validate left"></span>
                         </div>
 
                         <div class='row'>
@@ -82,7 +97,7 @@
 
                         <center>
                             <div class='row'>
-                                <button type='submit' name='send_login' id="send-btn"
+                                <button type='submit' name='send_reset_mail' id="send-reset-mail-btn"
                                     class='col s12 btn btn-large waves-effect'>Send</button>
                             </div>
                         </center>
@@ -97,6 +112,49 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        var eid_valid = false;
+
+        // employee id validation function
+        function validateEmpid() {
+            var empId = $("#emp-id").val();
+            var eid_message = "";
+
+            if (empId.length < 6 || empId.length > 6 || isNaN(empId)) {
+                eid_valid = false;
+                eid_message = "Please enter 6 digit employee id number.";
+            }
+            else {
+                eid_valid = true;
+                eid_message = "Employee id is valid."
+            }
+            if (eid_valid) {
+                $("#validate-eid").removeClass("invalid")
+                $("#validate-eid").addClass("valid")
+            }
+            else {
+                $("#validate-eid").removeClass("valid")
+                $("#validate-eid").addClass("invalid")
+            }
+            $("#validate-eid").text(eid_message);
+        }
+        $(document).ready(function () {
+            // employee id validation
+            $("#emp-id").on("keyup", validateEmpid);
+
+            // disable login button until id and password are valid
+            $("#send-reset-mail-btn").on("click", function (e) {
+
+                if (eid_valid) {
+                    return true;
+                }
+                else {
+                    e.preventDefault();
+                    return false;
+                };
+            })
+        });
+    </script>
 </body>
 
 </html>

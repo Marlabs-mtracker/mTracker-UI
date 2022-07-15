@@ -1,12 +1,9 @@
-// mobile navbar
-$(document).ready(function () {
-    $('.sidenav').sidenav();
-});
 
 // date-time picker 
 $(document).ready(function () {
     $('.datepicker').datetimepicker({
-        minDate: new Date()
+        minDate: new Date(),
+        format:'m/d/Y, h:i:s A'
     });
 });
 
@@ -16,7 +13,7 @@ $(document).ready(function () {
     $('select').formSelect();
 });
 
-// disable manual task ntering
+// disable manual task entering
 $('#task-name').on('change', function() {
     var taskName=$('#task-name').find(":selected").text();
     if(taskName=="Others"){
@@ -26,3 +23,12 @@ $('#task-name').on('change', function() {
         $("#task-name-manual").prop('disabled', true);
     }
 });
+
+$('#add_summary_btn').on('click', function() {
+    var summary = $('#input-summary').val();
+    if(summary!=""){
+        $('#task-list').prepend('<li>'+summary+' ('+new Date().toLocaleString()+')</li>');
+        $('#input-summary').val('');
+    }
+
+})
