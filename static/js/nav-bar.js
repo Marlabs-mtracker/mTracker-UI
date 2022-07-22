@@ -4,7 +4,7 @@
 // });
 
 $.get("nav-bar.html", function(data){
-    console.log(data)
+    // console.log(data)
     $("#nav-placeholder").replaceWith(data);
 });
 

@@ -16,15 +16,16 @@
 <body>
     <div id="nav-placeholder"></div>
     <div class="profile-container">
-        <div class="row">
-            <center>
-                <h5 class="profile-title">Profile</h5>
-
-                <div class="profile-details-card z-depth-3">
-                    <div class="profile-img" id="profile-img">
-                        <img src="./static/img/profile.png">
+        <center>
+            <h5 class="profile-title">Profile</h5>
+            
+                <div class="profile-details-card z-depth-3 row">
+                    <div class="profile-img col m10 l5" id="profile-img">
+                        <center>
+                            <img src="./static/img/profile.png">
+                        </center>
                     </div>
-                    <ul>
+                    <ul class="col m10 l7">
                         <li>Name: <span>Jon Doe</span></li>
                         <li>Designation: <span>BHR</span></li>
                         <li>Employee ID: <span>766780</span></li>
@@ -32,19 +33,20 @@
                         <li>Location: <span>Banglore</span></li>
                     </ul>
                 </div>
-                <br>
+            
+            <br>
 
-                <div class="tasks-summary-card z-depth-3 center">
-                    <h5 class="deep-purple-text accent-1">Task Summary</h5>
-                    <ul>
-                        <li>Total Queries/Tasks Assigned: <span>80</span></li>
-                        <li>Total Queries/Tasks Completed: <span>75</span></li>
-                        <li>Total Queries/Tasks Pending: <span>5</span></li>
-                    </ul>
-                </div>
-            </center>
+            <div class="tasks-summary-card z-depth-3 center">
+                <h5 class="deep-purple-text accent-1">Profile Summary</h5>
+                <ul>
+                    <li>Total Queries/Tasks Assigned: <span>80</span></li>
+                    <li>Total Queries/Tasks Completed: <span>75</span></li>
+                    <li>Total Queries/Tasks Pending: <span>5</span></li>
+                    <li>Total Queries/Tasks Due: <span>2</span></li>
+                </ul>
+            </div>
+        </center>
 
-        </div>
     </div>
     <script>
 

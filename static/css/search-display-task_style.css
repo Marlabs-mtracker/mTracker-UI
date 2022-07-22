@@ -1,14 +1,19 @@
 
 .task-search{
   display: flex;
-  width: 90%;
-  margin: 10px;
+  /* width: 90%; */
+  
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: flex-start;
+}
+.input-field{
+  margin-left: 0;
 }
 .search-btn, .load-more-btn{
   background: #504DFF !important;
 }
+
 .btn{
   border-radius: 10px;
 }
@@ -51,11 +56,35 @@
   flex-wrap: wrap;
   column-gap: 30px;
 }
+
+.task-card>div>div>div{
+  font-weight: 500;
+  font-size: 14px;
+}
 .task-card>div>div>div>span{
   color: #504DFF;
-  font-style: italic;
+  font-size: 16px;
 }
-.task-card>div>div>div{
+.summary-title{
   font-weight: 600;
+  font-size: 20px;
+  color: teal;
+  text-decoration: underline;
 }
-
+.summary-list>div{
+  font-size: 15px;
+}
+.summary-date{
+  font-style: italic;
+  font-size: 12px;
+  color: #504DFF;
+}
+.pending{
+  border:3px rgb(251, 255, 0) solid;
+}
+.completed{
+  border:3px green solid;
+}
+.due{
+  border:3px red solid;
+}

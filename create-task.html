@@ -24,7 +24,7 @@
             <form class="col l12 s12 offset-m0 offset-l2" method="#">
                 <div class="row">
                     <div class="input-field col l4 s12">
-                        <input placeholder="Type employee id..." id="emp-id" type="text" autocomplete="off">
+                        <input placeholder="Type employee id..." id="emp-id" type="text" autocomplete="off" autofocus>
                         <label for="emp-id">Employee ID</label>
                         <span id="validate-eid" class="validate left"></span>
                     </div>
@@ -39,7 +39,7 @@
                     <div class="input-field col l8 s12">
                         <input placeholder="Type employee email..." id="emp-email" type="text" autocomplete="off">
                         <label for="emp-email">Employee Email</label>
-                        <span id="validate-name" class="validate left"></span>
+                        <span id="validate-email" class="validate left"></span>
                     </div>
                 </div>
                 <div class="row">
@@ -51,7 +51,7 @@
                             <option value="3">Others</option>
                         </select>
                         <label>Task name</label>
-                        <span id="validate-name" class="validate left">val</span>
+                        
                     </div>
                     <div class="input-field col l5 s12">
                         <textarea disabled id="task-name-manual" class="materialize-textarea"></textarea>
@@ -107,7 +107,7 @@
     <script type="text/javascript" src="/static/js/nav-bar.js"></script>
     <script type="text/javascript" src="./static/js/create-task.js"></script>
     <script src="./static/js/jquery.datetimepicker.full.min.js"></script>
-    <script>
+    <script type="text/javascript">
         // mobile navbar
         $(document).ready(function () {
             $('.sidenav').sidenav();

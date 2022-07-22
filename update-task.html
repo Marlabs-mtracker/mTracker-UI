@@ -22,29 +22,30 @@
             </center>
             <form class="col l12 s12 offset-m0 offset-l2" method="#">
                 <div class="row">
-                    <div class="input-field col l4 s12">
+                    <div class="input-field col l2 s12">
                         <input placeholder="Type employee id..." id="emp-id" type="text" class="validate"
-                            value="Keshab Manni">
+                            value="192888" disabled>
                         <label for="emp-id">Employee ID</label>
+                        <span id="validate-eid" class="validate left"></span>
+                    </div>
+                    <div class="input-field col l2 s12">
+                        <input placeholder="Type employee name..." id="emp-name" type="text" class="validate"
+                            value="Jon Doe" disabled>
+                        <label for="emp-name">Employee Name</label>
+                        <span id="validate-ename" class="validate left"></span>
                     </div>
                     <div class="input-field col l4 s12">
-                        <input placeholder="Type employee name..." id="emp-name" type="text" class="validate"
-                            value="110147">
-                        <label for="emp-name">Employee Name</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col l8 s12">
                         <input placeholder="Type employee email..." id="emp-email" type="text" class="validate"
-                            value="keshab.manni@marlabs.com">
+                            value="keshab.manni@marlabs.com" disabled>
                         <label for="emp-email">Employee Email</label>
+                        <span id="validate-email" class="validate left"></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col l3 s12">
-                        <select id="task-name">
+                        <select id="task-name" disabled>
                             <option value="">Select task name</option>
-                            <option value="1" selected>Option 1</option>
+                            <option value="1" selected>IT</option>
                             <option value="2">Option 2</option>
                             <option value="3">Others</option>
                         </select>
@@ -88,14 +89,13 @@
                 </div>
                 <div class="row">
 
-                    <div class="input-field col s12">
+                    <div class="input-field col l4 s6">
                         <button type='submit' name='btn_update' id="task-update-btn"
-                            class='col l3 m6 s12 btn btn-large waves-effect'>Update</button>
+                            class='col l10 btn btn-large waves-effect'>Update</button>
                     </div>
-                    <div class="col s12"></div>
-                    <div class="input-field col s12">
+                    <div class="input-field col l4 s6">
                         <button name='btn_ask_delete' id="task-delete-btn"
-                            class='col l3 m6 s12 btn btn-large waves-effect'>Delete</button>
+                            class='col l10 btn btn-large waves-effect'>Delete</button>
                     </div>
                 </div>
             </form>
